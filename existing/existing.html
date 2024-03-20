@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  /* margin: 0;
+  padding: 0; */
+  background: url('img.jpeg');
+  background-size: cover;
+}
+
+.glass-table-container {
+  width: 80%;
+  margin: 50px auto 20px;
+  
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}
+
+#glass-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#glass-table th,
+#glass-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+#glass-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+#glass-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5; /* Light gray background for even rows */
+}
+
+#glass-table tbody tr:hover {
+  background-color: #e0e0e0; /* Darker gray background on hover */
+}
+
+#submit-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+#add-row-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add-row-button:hover {
+    background-color: #0056b3;
+  }
+
+</style>
+<body>
+  <div class="glass-table-container">
+    <table id="glass-table">
+      <thead>
+        <tr>
+            <th>Glass Type</th>
+            <th>Colour</th>
+            <th>Glass Thickness</th>
+            <th>Size</th>
+            <th>Drawing</th>
+            <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+    <button id="add-row-button">Add Row</button>
+    <a href="../confirmation/confirmation.html">
+    <button id="add-row-button">Submit</button></a>
+  </div>
+  <script src="existing.js"></script>
+</body>
+</html>

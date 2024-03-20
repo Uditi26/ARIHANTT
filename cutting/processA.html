@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('processa.jpeg.jpg');
+}
+
+
+.top-right-button {
+    position: fixed; /* Fix the button in place */
+    top: 20px; /* Distance from top of the viewport */
+    right: 20px; /* Distance from right of the viewport */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    z-index: 999; /* Ensure button is on top of other elements */
+}
+
+.glass-table-container {
+  width: 80%;
+  margin: 50px auto 20px;
+  
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}
+
+#glass-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#glass-table th,
+#glass-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+#glass-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+#glass-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5; /* Light gray background for even rows */
+}
+
+#glass-table tbody tr:hover {
+  background-color: #e0e0e0; /* Darker gray background on hover */
+}
+
+#submit-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+  background-color: #0056b3;
+}
+
+</style>
+<body>
+  <a href="../login/login.html">
+    <button class="top-right-button">Log Out</button></a>
+  <div class="glass-table-container">
+    <table id="glass-table">
+      <thead>
+        <tr>
+          <th>Glass Type</th>
+          <th>Glass Thickness</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Number of glasses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+    <button id="submit-button">Submit</button>
+  </div>
+  <script src="processa.js"></script>
+</body>
+</html>

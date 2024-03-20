@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="container" onclick="onclick">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="center">
+          <h2>Please Sign In</h2>
+          <input type="Id" placeholder="Id"/>
+          <input type="password" placeholder="password"/>
+          <!-- <br>
+          <select id="job" name="Job">
+          <option value="Admin">Admin</option>
+          <option value="Data Entry">Data Entry</option>
+          <option value="Cutting">Cutting</option> -->
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Role</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="../admin/admin.html">Admin</a>
+              <a href="../entry/entry.html">Data Entry</a>
+              <a href="../cutting/processA.html">Cutting</a>
+            </div>
+          </div>
+
+          <h2>&nbsp;</h2>
+        </div>
+      </div>
+
+
+      <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+</body>
+</html>

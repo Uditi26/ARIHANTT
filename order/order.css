@@ -1,0 +1,86 @@
+body{
+    background: url('Download\ free\ image\ of\ Abstract\ background\ with\ patterned\ glass\ texture\ by\ Hein\ about\ blue\ texture\,\ glass\ texture\,\ abstract\,\ abstract\ backgrounds\,\ and\ background\ 3797599.jpeg');
+}
+.glass-table-container {
+    width: 80%;
+    margin: 50px auto 20px;
+    
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  }
+  
+  #glass-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #glass-table th,
+  #glass-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  #glass-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  #glass-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #glass-table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  #add-row-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add-row-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for the glass colour dropdown */
+  select.glass-colour {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("data:image/svg+xml,%3csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5 3l3 3-3 3-1-1 2-2-2-2z' fill='%23838D9B'/%3e%3c/svg%3e") no-repeat right 8px center/12px 12px;
+  }
+  
+  /* Styles for the table and button */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 12px;
+  border: 1px solid #ddd;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;}
